@@ -14,6 +14,15 @@ private:
 
 	vector<Light> lights;
 
+	int id = 1;
+	int on = 0;
+	int bri = 2;
+	int sat = 10;
+	string effect = "none";
+	int red = 100;
+	int green = 100;
+	int blue = 100;
+
 public:
 
 	Main();
@@ -21,6 +30,9 @@ public:
 	void addLights(vector<Light>& vector, int vectorSize);
 
 	void getData();
+	void putData();
+
+
 
 
 };
